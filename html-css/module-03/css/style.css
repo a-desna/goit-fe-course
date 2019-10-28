@@ -24,6 +24,7 @@ body {
 .container {
   width: 901px;
   margin: 0 auto;
+  margin-bottom: 70px;
 }
 
 .navigation {
@@ -118,7 +119,6 @@ body {
   color: #626262;
   border: 1px solid #626262;
   cursor: pointer;
-  margin-bottom: 70px;
   margin: auto;
 }
 
