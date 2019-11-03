@@ -31,7 +31,7 @@ button {
 }
 
 .header {
-  padding: 37px 0 105px;
+  padding: 37px 0 100px;
 }
 
 .logo {
@@ -52,7 +52,8 @@ button {
 
 .menu-list {
   list-style: none;
-  padding: 0;
+  padding-top: 8px;
+  margin: 0;
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-size: 14px;
@@ -119,9 +120,12 @@ button {
   margin-bottom: 30px;
 }
 
+.product-image {
+  margin-bottom: -40px;
+}
+
 .product-button {
   font-family: "Roboto", sans-serif;
-  font-size: 18px;
   line-height: 32px;
   font-weight: 900;
   text-transform: uppercase;
@@ -130,6 +134,26 @@ button {
   height: 40px;
   background-color: #323232;
   border: none;
+  padding: 0;
+  font-size: 0px;
+}
+
+.product-item:hover .product-button,
+.product-button:focus {
+  background-color: #1abc9c;
+}
+
+.product-button span {
+  display: inline-block;
+  width: 200px;
+  font-size: 18px;
+  text-align: left;
+  padding: 5px 0 5px 13px;
+}
+
+.product-button span:last-child {
+  width: 55px;
+  background-color: rgba(255, 255, 255, 0.439);
 }
 
 .news {
@@ -154,7 +178,7 @@ button {
   content: "";
   width: 164px;
   height: 7px;
-  background-color: #1abc9c;
+  background-color: #4ec6ab;
   margin: 0 auto;
   margin-top: 32px;
 }
@@ -195,16 +219,6 @@ button {
   background-color: #4ec6ab;
   margin-top: 11px;
 }
-.Rectangle_35 {
-  background-color: rgb(78, 198, 171);
-  position: absolute;
-  left: 262px;
-  top: 1592px;
-  width: 136px;
-  height: 3px;
-  z-index: 30;
-}
-
 
 .news-description {
   font-size: 14px;
@@ -221,9 +235,10 @@ button {
   background-color: #4ec6ab;
   border: none; 
   border-radius: 3px;
-  width: 159px;
+  width: 160px;
   height: 51px;
   cursor: pointer;
+  padding: 0;
 }
 
 .visually-hidden:not(:focus):not(:active),
