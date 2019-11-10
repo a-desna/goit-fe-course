@@ -238,11 +238,14 @@ button {
   border-color: rgba(255, 255, 255, 0.5);
   border-style: solid;
   background-color: rgba(0, 0, 0, 0.549);
-  opacity: 0;
+  /* opacity: 0; */
+}
+
+.icon-item {
+  float: left;
 }
 
 .icon-item:not(:nth-child(3n)) {
-  float: left;
   margin-right: 10px;
   margin-bottom: 10px;
 }
@@ -254,39 +257,34 @@ button {
   border-width: 1px;
   background-color: transparent;
   padding: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-item:first-child .icon-button {
+  background-image: url(../img/icon/icon-like.png);
+}
+
+.icon-item:nth-child(2) .icon-button {
+  background-image: url(../img/icon/icon-compare.png);
+}
+
+.icon-item:nth-child(3) .icon-button {
+  background-image: url(../img/icon/icon-time.png);
+}
+
+.icon-item:last-child .icon-button {
+  width: 164px;
+  padding-left: 60px;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   line-height: 32px;
   font-weight: 400;
   color: #ffffff;
   text-transform: uppercase;
-}
-
-.icon-item:first-child .icon-button {
-  background-image: url(../img/icon/icon-like.png);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.icon-item:nth-child(2) .icon-button {
-  background-image: url(../img/icon/icon-compare.png);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.icon-item:nth-child(3) .icon-button {
-  background-image: url(../img/icon/icon-time.png);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.icon-item:last-child .icon-button {
-  width: 164px;
-  padding-left: 60px;
   text-align: left;
   background-color: rgb(50, 50, 50);
   background-image: url(../img/icon/icon-add.png);
-  background-repeat: no-repeat;
   background-position: 12px;
 }
 
