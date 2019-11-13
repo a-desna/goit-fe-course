@@ -81,18 +81,19 @@ button {
   position: relative;
 }
 
+main {
+  background-color: #e9f0fd;
+}
+
 .main-background {
-  height: 600px;
-  padding-top: 200px;
   background-image: linear-gradient(rgba(0, 0, 2, 0.52), rgba(0, 0, 2, 0.52)), url(../img/background-image.jpg); 
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  margin-bottom: 110px;
 }
 
 .main {
-  padding: 0 0 0 185px;
+  padding: 200px 0 266px 185px;
 }
 
 .main-title {
@@ -126,8 +127,7 @@ button {
   border: none;
   background: rgba(78, 198, 171, 0.651) url(../img/icon/icon-slider-left.png) no-repeat center;
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 225px;
 }
 
 .left {
@@ -145,7 +145,7 @@ button {
 }
 
 .product {
-  padding-bottom: 98px;
+  padding: 110px 0 100px;
 }
 
 .product-title {
