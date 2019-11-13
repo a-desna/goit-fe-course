@@ -86,9 +86,7 @@ main {
 }
 
 .main-background {
-  background-image: linear-gradient(rgba(0, 0, 2, 0.52), rgba(0, 0, 2, 0.52)), url(../img/background-image.jpg); 
-  background-repeat: no-repeat;
-  background-position: center center;
+  background: linear-gradient(rgba(0, 0, 2, 0.52), rgba(0, 0, 2, 0.52)), url(../img/background-image.jpg) no-repeat center center;
   background-size: cover;
 }
 
@@ -233,9 +231,7 @@ main {
   position: absolute;
   top: 0;
   background-color: rgba(0, 0, 0, 0.549);
-  border-width: 10px;
-  border-style: solid;
-  border-color: rgba(255, 255, 255, 0.549); 
+  border: 10px solid rgba(255, 255, 255, 0.549);
   background-clip: padding-box;
   opacity: 0;
 }
@@ -254,10 +250,8 @@ main {
   height: 48px;
   border-color: #ffffff;
   border-width: 1px;
-  background-color: transparent;
   padding: 0;
-  background-repeat: no-repeat;
-  background-position: center;
+  background: transparent no-repeat center;
 }
 
 .icon-item:first-child .icon-button {
@@ -329,4 +323,3 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
- 
