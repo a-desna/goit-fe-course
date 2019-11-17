@@ -80,17 +80,20 @@ body {
 }
 
 .menu-link:hover::after,
-.menu-link:focus::after {
+.menu-link:focus::after,
+.menu-link:hover,
+.menu-link:focus {
+  color: #f38181;
   opacity: 1;
   visibility: visible;
   transition: all 200ms linear;
 }
 
-.menu-link:hover,
+/* .menu-link:hover,
 .menu-link:focus {
   color: #f38181;
   transition: all 200ms linear;
-}
+} */
 
 .services {
   margin-bottom: 86px;
