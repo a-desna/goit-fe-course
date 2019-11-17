@@ -25,7 +25,7 @@ body {
 }
 
 .header {
-  margin-bottom: 124px;
+  margin-bottom: 122px;
   padding-top: 29px;
 }
 
@@ -138,6 +138,38 @@ body {
 .servises-item {
   width: 382px;
   padding-left: 82px;
+  position: relative;
+}
+
+.servises-item::before {
+  display: block;
+  content: "";
+  width: 40px;
+  height: 40px;
+  background: url(../img/icon-services/photography.png) no-repeat;
+  position: absolute;
+  left: 20px;
+  top: 0;
+}
+
+.servises-item:nth-child(2)::before {
+  background-image: url(../img/icon-services/design.png);
+}
+
+.servises-item:nth-child(3)::before {
+  background-image: url(../img/icon-services/creativity.png);
+}
+
+.servises-item:nth-child(4)::before {
+  background-image: url(../img/icon-services/seo.png);
+}
+
+.servises-item:nth-child(5)::before {
+  background-image: url(../img/icon-services/css-html.png);
+}
+
+.servises-item:last-child::before {
+  background-image: url(../img/icon-services/digital.png);
 }
 
 .servises-item:not(:nth-last-child(-n + 3)) {
@@ -211,17 +243,11 @@ body {
   margin: 0;
 }
 
-.team-item:hover .team-image,
-.team-item:focus-within .team-image {
-  top: -10px;
-  left: -10px;
-  transition: all 200ms linear;
-}
-
 .team-item:hover .social-list,
-.team-item:focus-within .social-list {
+.team-item:focus .social-list,
+.team-item:hover .team-image,
+.team-item:focus .team-image {
   opacity: 1;
-  /* visibility: visible; */
   box-shadow: 10px 10px 0 #95e1d3;
   top: -10px;
   left: -10px;
@@ -239,7 +265,6 @@ body {
   justify-content: center;
   align-items: center;
   opacity: 0;
-  /* visibility: hidden; */
   position: absolute;
   top: 0;
   left: 0;
@@ -276,7 +301,6 @@ body {
 .social-link:focus {
   background-color: #95e1d3;
 }
-
 
 .footer {
   display: flex;
