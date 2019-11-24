@@ -1,0 +1,293 @@
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'),
+       url('../fonts/montserrat-v14-cyrillic_latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/montserrat-v14-cyrillic_latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'),
+       url('../fonts/montserrat-v14-cyrillic_latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/montserrat-v14-cyrillic_latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'PT Serif';
+  font-style: italic;
+  font-weight: 400;
+  src: local('PT Serif Italic'), local('PTSerif-Italic'),
+       url('../fonts/pt-serif-v11-cyrillic_latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/pt-serif-v11-cyrillic_latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/roboto-slab-v10-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/roboto-slab-v10-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'),
+       url('../fonts/montserrat-v14-cyrillic_latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/montserrat-v14-cyrillic_latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 58.75rem;
+  margin: 0 auto;
+}
+
+.menu-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2.5rem;
+}
+
+.logo {
+  display: block;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 30rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-link {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 2.5625rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #222222;
+  transition: color 200ms linear;
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  color: #fed136;
+}
+
+.services {
+  text-align: center;
+  padding-top: 6.875rem;
+  margin-bottom: 7.5rem;
+}
+
+.services-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #222222;
+  letter-spacing: -0.025em;
+  margin: 0 0 0.875rem;
+}
+
+.services-subtitle {
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.2;
+  color: #777777;
+  margin: 0 0 4.6875rem;
+}
+
+.services-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.services-item {
+  width: 17.5rem;
+  position: relative;
+}
+
+.services-item::before {
+  content: "";
+  display: block;
+  width: 4.5rem;
+  height: 4.5rem;
+  border: 3px solid rgb(254, 209, 54);
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 1.375rem;
+  background: url(../img/icon/icon-basket.png) no-repeat center;
+}
+
+.services-item:nth-child(2)::before {
+  background: url(../img/icon/icon-laptop.png) no-repeat center;
+}
+
+.services-item:last-child::before {
+  background: url(../img/icon/icon-locked.png) no-repeat center;
+}
+
+.services-item-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+  color: #222222;
+  margin: 0 0 0.75rem;
+}
+
+.services-item-description {
+  font-family: "Roboto Slab", serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: -0.025em;
+  color: #777777;
+  margin: 0;
+}
+
+.footer {
+  background: #222222 url(../img/footer-mage.png) no-repeat bottom right;
+}
+
+.contact {
+  text-align: center;
+  padding: 6.625rem 0 7.125rem;
+}
+
+.contact-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: -0.025em;
+  margin: 0 0 1rem;
+}
+
+.contact-subtitle {
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.2;
+  color: #777777;
+  margin: 0 0 4.625rem;
+}
+
+.contact-list {
+  list-style: none;
+  margin: 0 0 1.875rem;
+  padding: 0;
+  height: 13.25rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.contact-input {
+  width: 28.5625rem;
+  height: 3.25rem;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 2px;
+  padding-left: 1.25rem;
+}
+
+.contact-input:required:focus:valid {
+  outline: 1px auto rgb(0, 200, 0);
+}
+
+.contact-input:required:focus:invalid {
+  outline: 1px auto rgb(255, 0, 0);
+}
+
+.contact-textarea {
+  display: block;
+  width: 28.5625rem;
+  height: 13.25rem;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 5px;
+  resize: none;
+  padding: 1.25rem 0 0 1.25rem;
+}
+
+.contact-input::placeholder,
+.contact-textarea::placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #bbbbbb;
+  letter-spacing: -0.025em;
+}
+
+.contact-btn {
+  width: 15rem;
+  height: 4.0625rem;
+  border: none;
+  border-radius: 3px;
+  background-color: rgb(254, 209, 54);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.2;
+  color: #ffffff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
