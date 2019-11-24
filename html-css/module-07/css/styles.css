@@ -250,7 +250,7 @@ img {
   border: 1px solid rgb(204, 204, 204);
   border-radius: 5px;
   resize: none;
-  padding: 1.25rem 0 0 1.25rem;
+  padding: 1rem 0 0 1.25rem;
 }
 
 .contact-input::placeholder,
