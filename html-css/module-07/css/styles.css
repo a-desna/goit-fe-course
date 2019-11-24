@@ -230,6 +230,11 @@ img {
   padding-left: 1.25rem;
 }
 
+.contact-input:focus,
+.contact-textarea:focus {
+  outline: none;
+}
+
 .contact-input:required:focus:valid {
   outline: 1px auto rgb(0, 200, 0);
 }
