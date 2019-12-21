@@ -1,0 +1,77 @@
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-top: 1px solid #e5e5e5;
+  padding: 0.75rem 0;
+}
+
+.sign {
+  font-size: 0.875rem;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.sign__link {
+  text-decoration: none;
+  color: $secondary-accent-color;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact__input {
+  font-family: $secondary-font;
+  font-size: 0.9375rem;
+  line-height: 1.5rem;
+  font-style: italic;
+  color: #cccccc;
+  border: 1px solid #e7e7e7;
+  padding: 0 0.75rem;
+  width: 14.375rem;
+  height: 2.5rem;
+  outline: none;
+}
+
+.contact__input::-webkit-input-placeholder {
+  color: #cccccc;
+}
+
+.contact__input::-moz-placeholder {
+  color: #cccccc;
+}
+
+.contact__input:-ms-input-placeholder {
+  color: #cccccc;
+}
+
+.contact__input::-ms-input-placeholder {
+  color: #cccccc;
+}
+
+.contact__input::placeholder {
+  color: #cccccc;
+}
+
+.contact__btn {
+  font-size: 0.875rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: $main-white-color;
+  background-color: $secondary-bg-color;
+  width: 9.375rem;
+  height: 2.5rem;
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
