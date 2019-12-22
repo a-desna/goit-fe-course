@@ -21,9 +21,7 @@
 }
 
 .site-logo {
-  font-size: 1.875rem;
-  line-height: 1.2;
-  font-weight: 700;
+  @include font(1.875rem, 1.2, 700);
   color: $main-white-color;
 }
 
@@ -41,6 +39,7 @@
 }
 
 .site-navigation {
+  @extend %list;
   min-width: 30.625rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -54,10 +53,8 @@
 }
 
 .site-navigation__link {
-  font-size: 0.875rem;
-  line-height: 1.0625rem;
+  @include font(0.875rem, 1.0625rem);
   color: $main-white-color;
-  font-weight: 400;
   text-transform: uppercase;
   position: relative;
   -webkit-transition: all 200ms linear;
@@ -96,6 +93,7 @@
 
 
 .navigation-icon {
+  @extend %list;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -126,17 +124,14 @@
 
 .header__subtitle {
   font-family: $secondary-font-subtitle;
-  font-size: 4.5rem;
-  line-height: 1.2;
+  @include font(4.5rem, 1.2);
   text-align: center;
   color: $main-white-color;
   margin: 0 0 2.125rem 0;
 }
 
 .header__title {
-  font-size: 9.375rem;
-  line-height: 8.75rem;
-  font-weight: 700;
+  @include font(9.375rem, 8.75rem, 700);
   text-align: center;
   text-transform: uppercase;
   color: $main-white-color;
@@ -150,9 +145,7 @@
   height: 2.5rem;
   border: 3px solid rgb(255, 255, 255);
   background-color: transparent;
-  font-size: 0.875rem;
-  line-height: 1.2;
-  font-weight: 700;
+  @include font(0.875rem, 1.2, 700);
   text-transform: uppercase;
   color: $main-white-color;
   cursor: pointer;

@@ -20,14 +20,7 @@ img {
 }
 
 .link {
-  display: block;
-  text-decoration: none;
-}
-
-.list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  @extend %link;
 }
 
 .container {

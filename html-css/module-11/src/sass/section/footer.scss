@@ -13,8 +13,7 @@
 }
 
 .sign {
-  font-size: 0.875rem;
-  line-height: 1.2;
+  @include font(0.875rem, 1.2);
   margin: 0;
 }
 
@@ -31,10 +30,9 @@
 
 .contact__input {
   font-family: $secondary-font;
-  font-size: 0.9375rem;
-  line-height: 1.5rem;
+  @include font(0.9375rem, 1.5rem, 300);
   font-style: italic;
-  color: #cccccc;
+  color: $secondary-text-color;
   border: 1px solid #e7e7e7;
   padding: 0 0.75rem;
   width: 14.375rem;
@@ -63,8 +61,7 @@
 }
 
 .contact__btn {
-  font-size: 0.875rem;
-  line-height: 1.2;
+  @include font(0.875rem, 1.2, 700);
   text-transform: uppercase;
   color: $main-white-color;
   background-color: $secondary-bg-color;

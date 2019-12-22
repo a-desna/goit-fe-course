@@ -8,6 +8,7 @@
 }
 
 .services-list {
+  @extend %list;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -49,8 +50,7 @@
 }
 
 .services-list__item-title {
-  font-size: 0.875rem;
-  line-height: 1.2;
+  @include font(0.875rem, 1.2, 700);
   text-transform: uppercase;
   margin: 0 0 0.75rem 0;
 }

@@ -13,6 +13,7 @@
 }
 
 .team-list {
+  @extend %list;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -45,22 +46,21 @@
 }
 
 .team-list__item-name {
-  font-size: 0.875rem;
-  line-height: 1.2;
+  @include font(0.875rem, 1.2, 700);
   text-transform: uppercase;
   margin: 0 0 0.3125rem 0;
 }
 
 .team-list__item-position {
   font-family: $secondary-font;
-  font-size: 0.9375rem;
-  line-height: 1.5rem;
+  @include font(0.9375rem, 1.5rem, 300);
   font-style: italic;
   color: $secondary-text-color;
   margin: 0;
 }
 
 .socials {
+  @extend %list;
   width: 100%;
   height: 29.375rem;
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(252, 227, 138, 0.9)), to(rgba(243, 129, 129, 0.9)));
