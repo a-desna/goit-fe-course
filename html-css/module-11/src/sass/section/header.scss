@@ -21,38 +21,24 @@
 }
 
 .site-logo {
+  @extend %link;
   @include font(1.875rem, 1.2, 700);
   color: $main-white-color;
 }
 
 .menu-wraper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  @include sb-center-flex;
   min-width: 38.625rem;
 }
 
 .site-navigation {
   @extend %list;
   min-width: 30.625rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  @include sb-center-flex
 }
 
 .site-navigation__link {
+  @extend %link;
   @include font(0.875rem, 1.0625rem);
   color: $main-white-color;
   text-transform: uppercase;
@@ -94,15 +80,7 @@
 
 .navigation-icon {
   @extend %list;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  @include sb-center-flex;
   min-width: 4.75rem;
 
   &__lilk:hover,
